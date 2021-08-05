@@ -9,7 +9,7 @@
 
   .remove {
     display: flex;
-    margin-right: 1rem;
+    flex: 1;
     align-items: center;
     font-size: 1.5rem;
     cursor: pointer;
@@ -17,21 +17,19 @@
   }
 
   .checkbox {
-    cursor: pointer;
-    display: flex;
+    margin-right: 0.5rem;
     align-items: center;
 
     .text {
-      font-size: 1.2rem;
       display: flex;
-      flex: 1;
-      margin-left: 1rem;
+      font-size: 1.2rem;
       align-items: center;
+      margin-right: 0rem;
+      float: left;
 
       .icon {
-        // margin-left: auto;
-        // margin-right: 1px;
-        // text-align: right;
+        margin-left: 10rem;
+        cursor: pointer;
       }
     }
 

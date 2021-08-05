@@ -16,7 +16,7 @@ const TodoListItem = ({ todo, onRemove, onToggle }) => {
       </div>
 
       <div className={cn('checkbox', { checked })} onClick={() => onToggle(id)}>
-        <div className="text">
+        <div className="text" onContextMenu={(e) => e.preventDefault()}>
           {text}
           <div className="icon">
             {checked ? <MdCheckBox /> : <MdCheckBoxOutlineBlank />}
