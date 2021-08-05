@@ -15,21 +15,39 @@
     cursor: pointer;
     color: #f16b82;
   }
-  .text {
-    font-size: 1.2rem;
-    display: flex;
-    flex: 1;
-    margin-left: 1rem;
-    align-items: center;
-  }
 
   .checkbox {
     cursor: pointer;
     display: flex;
     align-items: center;
 
+    .text {
+      font-size: 1.2rem;
+      display: flex;
+      flex: 1;
+      margin-left: 1rem;
+      align-items: center;
+
+      .icon {
+        margin-left: auto;
+        margin-right: 1px;
+        text-align: right;
+      }
+    }
+
     svg {
       font-size: 1.5rem;
+    }
+
+    &.checked {
+      .text {
+        display: flex;
+        flex: 1;
+        text-decoration: line-through;
+      }
+      svg {
+        color: #aaaa88;
+      }
     }
   }
 
